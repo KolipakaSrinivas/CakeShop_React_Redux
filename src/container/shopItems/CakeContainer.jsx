@@ -19,11 +19,13 @@ function CakeContainer() {
 
 
     return (
-        <div>
+        <div className='shop--items'>
             {/* <h1>Number of Cakes {cakes.numOfCakes}</h1> */}
+            <div className='button'>
             <button onClick={()=>Dispatch(cakeorder())}>Buy Cake</button>
             <input type='number' value={count} onChange={handleChange} />
             <button onClick={restock} >Restock</button>
+            </div>
         </div>
       )
 }
